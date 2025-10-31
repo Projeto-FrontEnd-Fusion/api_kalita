@@ -1,8 +1,8 @@
 import express from 'express';
-import { PrismaClient } from '@prisma/client';
+import { prisma } from './prisma/prisma';
 
 export const app = express();
-const prisma = new PrismaClient();
+
 app.use(express.json());
 
 
