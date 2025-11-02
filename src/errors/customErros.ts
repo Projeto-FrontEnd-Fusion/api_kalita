@@ -61,7 +61,7 @@ export class TokenExpired extends CustomApiError {
 
 export class ZodErrors extends CustomApiError {
   constructor(
-    public ErrorObject: ZodError[],
+    public ErrorObject: ZodError,
     message: string = "Erro de validação"
   ) {
     super(message, HttpStatusCode.UNPROCESSABLE_ENTITY); 
